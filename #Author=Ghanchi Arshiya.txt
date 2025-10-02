@@ -1,0 +1,296 @@
+Quiz
+Question 1 (1 point) 
+Hardcoded numbers in the code are also known as "magic numbers" because their meaning is unclear and they appear to "magically fix the code".
+Best practice is to declare them as ____ in SCREAMING_SNAKE_CASE.
+
+Question 1 options:
+
+whole numbers
+
+
+constants
+
+
+integers
+
+
+variables
+
+Question 2 (1 point) 
+Your Java code is typed in files with the .java extension.
+These Java files must be named:
+
+Question 2 options:
+
+ICE number - Student Name - Student Number
+
+
+Exactly same name as the class within the file, in camelCase
+
+
+Exactly same name as the class within the file, in PascalCase
+
+
+App Name - Student Name
+
+Question 3 (1 point) 
+The main(String[] args) method is the entry-point of a Java app.
+
+Question 3 options:
+
+False
+
+
+True
+
+Question 4 (1 point) 
+According to the official Java style guide, file names must be written in ____ , no spaces and no special characters.
+
+Question 4 options:
+
+camelCase
+
+
+snake_case
+
+
+PascalCase
+
+
+UPPER_SNAKE
+
+Question 5 (1 point) 
+According to the official Java style guide, variables names must be written in ____ .
+
+Question 5 options:
+
+UPPER_SNAKE
+
+
+snake_case
+
+
+camelCase
+
+
+PascalCase
+
+Question 6 (1 point) 
+All statements in a do - while loop are executed at least ____.
+
+Question 6 options:
+
+once
+
+
+twice
+
+
+Thrice
+
+
+Indefinitely
+Question 7 (1 point) 
+In Java, what's the difference between " " and ' '?
+
+Question 7 options:
+
+' ' is a string and " " is a character
+
+
+Both are characters
+
+
+Both are strings
+
+
+' ' is a character and " " is a string
+
+Question 8 (1 point) 
+Dividing the integer 15 by the integer 2 yields the result ____.
+
+Question 8 options:
+
+7.500
+
+
+7.5
+
+
+7
+
+
+8
+
+Question 9 (1 point) 
+What will the code below print?
+
+String userName = "Fred Stiebler";
+System.out.printf("Hello %s, nice to meet you!", userName);
+
+Question 9 options:
+
+Hello Fred Stiebler, nice to meet you!
+
+
+Hello %s, nice to meet you!
+
+
+Hello userName, nice to meet you!
+
+
+Error, this code won't execute properly
+
+Question 10 (1 point) 
+The arithmetic operator % is the Java symbol for the ____ operation.
+
+Question 10 options:
+
+addition
+
+
+percentage
+
+
+division
+
+
+modulus
+
+Question 11 (1 point) 
+According to our style-guide, abbreviating variable names is completely fine, and using short names is encouraged.
+E.g. String stdName; has a very clear meaning and is not ambiguous at all!
+
+Question 11 options:
+
+True
+
+
+False
+
+Question 12 (1 point) 
+The while statement loops back on itself to re-check the condition until ____.
+
+Question 12 options:
+
+New data is entered
+
+
+The program is terminated
+
+
+The condition is false
+
+
+The condition is true
+
+Question 13 (1 point) 
+A main(String[] args) method is not mandatory in a Java app.
+
+Question 13 options:
+
+True
+
+
+False
+
+Question 14 (1 point) 
+The backslash \, is referred to as the ____ character, and can be used to create ____ sequeces such as \n and \".
+
+Question 14 options:
+
+separator
+
+
+escape
+
+
+quotient
+
+
+tab
+
+Question 15 (1 point) 
+Properly coded apps do not need comments if their code are self-explanatory.
+
+Question 15 options:
+
+False
+
+
+True
+
+Question 16 (1 point) 
+The \n is a escape sequence that means "move to a new line".
+
+Question 16 options:
+
+True
+
+
+False
+
+Question 17 (1 point) 
+The ++ operator:
+
+Question 17 options:
+
+Will throw an error message
+
+
+Is the same as: number = number + 1
+
+
+Means integer addition: 1 ++ 1.5 is rounded to 2
+
+
+Is the same as: number + number
+
+Question 18 (1 point) 
+The boolean data type is used to hold ____ values.
+
+Question 18 options:
+
+valid
+
+
+whole numbers
+
+
+yes no
+
+
+true false
+
+Question 19 (1 point) 
+A loop contained within another loop is called a ____ loop.
+
+Question 19 options:
+
+nested
+
+
+secondary
+
+
+replacement
+
+
+virtual
+
+Question 20 (1 point) 
+We work with 2 types of files when coding a Java app:
+A File.java and a File.jar:
+
+Question 20 options:
+
+The File.java is where you type the code, and the File.jar is the compiled app.
+
+
+Both files are exactly the same
+
+
+The File.jar is where you type the code, and the File.java is the compiled app.
+
+
+0 of 20 questions saved
