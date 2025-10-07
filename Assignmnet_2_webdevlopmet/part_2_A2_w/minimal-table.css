@@ -1,0 +1,7 @@
+
+/* Table body */
+tbody td, tbody th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
