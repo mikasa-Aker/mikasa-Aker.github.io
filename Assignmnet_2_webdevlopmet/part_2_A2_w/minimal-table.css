@@ -1,7 +1,54 @@
+/* Table layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
 
-/* Table body */
-tbody td, tbody th {
+/* Caption styling */
+caption small {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Header row */
+thead th {
+    background-color: #cccccc;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
+}
+
+/* Borders */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Text alignment */
+th, td {
     text-align: center;
+}
+td.planet-name, th.planet-name {
+    text-align: left;
+}
+
+/* Notes column alignment */
+td:last-child {
+    text-align: left;
+}
+
+/* Category cells */
+.t {
+    background-color: transparent;
+    font-weight: bold;
 }
