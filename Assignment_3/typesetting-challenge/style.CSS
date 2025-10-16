@@ -43,6 +43,12 @@ h2{
 }
 p{
     text-indent: 2rem;
+    
+line-height: 1.6;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+    
 }
 
 a:link {
@@ -65,4 +71,14 @@ a[href^="http"]{
  background-size: 12px 12px;
 
 }
+ul,
+ol {
+  line-height: 1.6;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 2em; /* Optional: adds space before list items */
+}
 
+li {
+  margin-bottom: 0.5em; /* Optional: space between list items */
+}
