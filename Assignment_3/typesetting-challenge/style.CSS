@@ -5,6 +5,8 @@ box-sizing: border-box;
 }
 
 body {
+font: 1.2em / 1.5 system-ui;
+line-height: 1.5;
 margin: 0 auto;
 padding: 0 20px;
 min-width: 980px;
@@ -23,6 +25,7 @@ padding: 20px 0;
 /* header and footer */
 
 header {
+
 border-bottom: 5px solid #aa6666;
 }
 
