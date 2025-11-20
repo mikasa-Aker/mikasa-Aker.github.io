@@ -11,3 +11,8 @@ background: #ffc125;
 padding: 20px;
 visibility: hidden;
 }
+body{
+    font: 1.2em/ 1.5 system-ui;
+    margin:0 auto;
+    width:500px;
+}
