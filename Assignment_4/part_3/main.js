@@ -1,8 +1,6 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-ctx.fillStyle = "green";
-// Add a rectangle at (10, 10) with size 100x100 pixels
-ctx.fillRect(10, 10, 100, 100);
+
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
@@ -13,6 +11,7 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)} ${random(0, 255)} ${random(0, 255)})`;
 }
+const balls = [];
 class Ball {
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
@@ -31,66 +30,35 @@ draw() {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
 }
-}
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
-testBall.x;
-testBall.size;
-testBall.color;
-testBall.draw();
-const balls = [];
+ update() {
+    if (this.x + this.size >= width) {
+      this.velX = -Math.abs(this.velX);
+    }
+     if (this.x - this.size <= 0) {
+      this.velX = Math.abs(this.velX);
+    }
 
-while (balls.length < 25) {
-  const size = random(10, 20);
-  const ball = new Ball(
-    // ball position always drawn at least one ball width
-    // away from the edge of the canvas, to avoid drawing errors
-    random(0 + size, width - size),
-    random(0 + size, height - size),
-    random(-7, 7),
-    random(-7, 7),
-    randomRGB(),
-    size,
-  );
+    if (this.y + this.size >= height) {
+ this.velY = -Math.abs(this.velY);
+    }
 
-  balls.push(ball);
-}
-function loop() {
-  ctx.fillStyle = "rgb(0 0 0 / 25%)";
-  ctx.fillRect(0, 0, width, height);
+    if (this.y - this.size <= 0) {
+      this.velY = Math.abs(this.velY);
+    }
 
-  for (const ball of balls) {
-    ball.draw();
-    ball.update();
+    this.x += this.velX;
+    this.y += this.velY;
   }
-
-  requestAnimationFrame(loop);
-}
-loop();
-class Ball {
-  // …
   collisionDetect() {
     for (const ball of balls) {
-      if (this !== ball) {
+      if (!(this === ball)) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < this.size + ball.size) {
+ if (distance < this.size + ball.size) {
           ball.color = this.color = randomRGB();
         }
       }
     }
   }
-}
-function loop() {
-  ctx.fillStyle = "rgb(0 0 0 / 25%)";
-  ctx.fillRect(0, 0, width, height);
-
-  for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
-  }
-
-  requestAnimationFrame(loop);
 }
