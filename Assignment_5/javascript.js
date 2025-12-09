@@ -29,19 +29,19 @@ form.onsubmit = function(e) {
 };
 
 function submitComment() {
-  const listItem = document.createElement('li');
-  const namePara = document.createElement('p');
-  const commentPara = document.createElement('p');
-  const nameValue = nameField.value;
-  const commentValue = commentField.value;
+const listItem = document.createElement('li');
+const namePara = document.createElement('p');
+const commentPara = document.createElement('p');
+const nameValue = nameField.value;
+const commentValue = commentField.value;
 
-  namePara.textContent = nameValue;
-  commentPara.textContent = commentValue;
+namePara.textContent = nameValue;
+commentPara.textContent = commentValue;
 
-  list.appendChild(listItem);
-  listItem.appendChild(namePara);
-  listItem.appendChild(commentPara);
+list.appendChild(listItem);
+listItem.appendChild(namePara);
+listItem.appendChild(commentPara);
 
-  nameField.value = '';
-  commentField.value = '';
+nameField.value = '';
+commentField.value = '';
 }
