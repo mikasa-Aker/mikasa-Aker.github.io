@@ -1,6 +1,0 @@
--html
--css
--javascript
--amazonclone
--games
-=bootstrap
