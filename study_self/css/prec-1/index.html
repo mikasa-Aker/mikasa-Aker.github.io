@@ -159,9 +159,39 @@ ex-2-(stick when you scroll)
         position:sticky;
         top:0px;
 
+------------Z-index
+-its deside stack level of element(which one on top)
+-overlapping elements with large z-index cover thoes with smaller one.
+-
+z-index:auto(0)
+z-index:1/2/...
+z-index:-1/-2/...
+
+ex-
+        #box2{                      (gonn top) (no for static)
+            position:absolute;
+            top:10px;
+            bottom:0px;
+            z-index:1;
+            }
+            #box3{                (gonn hide)(no for static)
+            position:absolute;
+            top:10px;
+            bottom:1px;
+            z-index
+---------------images
+
+-unsplash for emage
+
+    #box1{
+            background-image:url("link")
+            }
 
 
+------------------back ground size property
+-background-size:cover/conatain/auto
 
+-cover-for all
 
 
 
